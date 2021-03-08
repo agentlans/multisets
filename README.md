@@ -28,20 +28,20 @@ To load the library:
 
 Set operations
 
-| `(S-UNION set1 set2)` | for each element, the max number of times it appears in both sets |
+| Function | Description |
 | --- | --- |
-| `(S-INTERSECTION set1 set2)` | for each element, the minimum number of times it appears in both sets |
-| --- | --- |
-| `(S-DIFFERENCE set1 set2)` | how many more of each element is in set1 than set2 |
-| --- | --- |
-| `(S-SUM set1 set2)` | multiset with all elements in set1 and set2 |
-| --- | --- |
-| `(S-SUBSET set1 set2)` | returns T if set2 has as least as many copies of each element in set1 |
+|`(S-UNION set1 set2)` | for each element, the max number of times it appears in both sets |
+|`(S-INTERSECTION set1 set2)` | for each element, the minimum number of times it appears in both sets |
+|`(S-DIFFERENCE set1 set2)` | how many more of each element is in set1 than set2 |
+|`(S-SUM set1 set2)` | multiset with all elements in set1 and set2 |
+|`(S-SUBSET set1 set2)` | returns T if set2 has as least as many copies of each element in set1 |
 
 Query operations
 
+| Function | Description |
+| --- | --- |
 | `(S-CONTAINS s x)` | returns whether x is in multiset s and the index at which x is supposed to appear |
-| `(S-COUNT s x)` | returns the number of times x is present in multiset s
+| `(S-COUNT s x)` | returns the number of times x is present in multiset s |
 
 ## Frequently Asked Questions
 
